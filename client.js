@@ -18,11 +18,27 @@ const connect = function () {
     conn.write("Name: SD");
   });
 
+  conn.on("connect", () => {
+    conn.write("Move: up");
+  });
+
+  conn.on("connect", () => {
+    conn.write("Move: left");
+  });
+
+  conn.on("connect", () => {
+    conn.write("Move: down");
+  });
+
+  conn.on("connect", () => {
+    conn.write("Move: right");
+  });
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
   return conn;
 };
+
 
 module.exports = { connect };
