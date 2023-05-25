@@ -6,6 +6,9 @@ This is simply a multiplayer take on the genre.
 
 Before you can run this client, you will need to be running the server side which you can download and install from here. 
 
+https://github.com/lighthouse-labs/snek-multiplayer
+
+
 ## Final Product
 
 !["Run the client on server"](./screen.png)
