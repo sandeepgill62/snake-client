@@ -37,7 +37,7 @@ const handleUserInput = function (data) {
   }
 
   if (data === "q") {
-    connection.write("Say: Hello from Sandeep");
+    connection.write("Say: Hello");
   }
 };
 
