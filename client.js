@@ -18,20 +18,8 @@ const connect = function () {
     conn.write("Name: SD");
   });
 
-  conn.on("connect", () => {
-    conn.write("Move: up");
-  });
-
-  conn.on("connect", () => {
-    conn.write("Move: left");
-  });
-
-  conn.on("connect", () => {
-    conn.write("Move: down");
-  });
-
-  conn.on("connect", () => {
-    conn.write("Move: right");
+  conn.on("end", () => {
+    process.exit();
   });
 
   // interpret incoming data as text
